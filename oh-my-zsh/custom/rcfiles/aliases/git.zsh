@@ -13,6 +13,7 @@ alias grb="git rebase"
 alias grbc="git rebase --continue"
 alias grba="git rebase --abort"
 
+alias push="gpc"
 alias yeet="gpc"
 alias yoink="gfc"
 
