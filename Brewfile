@@ -9,6 +9,7 @@ brew "spaceship"
 brew "tmux"
 brew "zsh"
 brew "zsh-autosuggestions"
+brew "lazygit"
 
 cask "1password"
 cask "chatgpt"
