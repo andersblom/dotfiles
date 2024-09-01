@@ -2,4 +2,4 @@ EXCLUDES="Brewfile Brewfile.lock.json README.md dz60rgb_v2.layout.json"
 
 SYMLINK_DIRS=""
 
-UNDOTTED=""
+UNDOTTED="Library"
