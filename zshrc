@@ -109,10 +109,6 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Aliases for changing/reloading ZSH
-alias change="code ~/.zshrc"
-alias update="source ~/.zshrc"
-
 # Run pythod using the `py` alias
 function py() {
   ( /usr/local/bin/python3 $* )
