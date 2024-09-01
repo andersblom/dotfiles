@@ -12,3 +12,15 @@ alias grhh='grh --hard'
 alias grb="git rebase"
 alias grbc="git rebase --continue"
 alias grba="git rebase --abort"
+
+alias yeet="gpc"
+alias yoink="gfc"
+
+gpc () {
+  git push origin $(git name-rev --name-only HEAD)
+}
+
+gfc () {
+  git pull origin $(git name-rev --name-only HEAD)
+}
+

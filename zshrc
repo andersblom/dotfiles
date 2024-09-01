@@ -75,6 +75,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# Source all files in .dotfiles/oh-my-zsh/custom/rcfiles for aliases
 sourceFileInConfig () {
   for file in $ZSH/custom/$1/**/*.zsh; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
@@ -84,7 +85,6 @@ sourceFileInConfig () {
 
 sourceFileInConfig rcfiles
 
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -92,7 +92,7 @@ sourceFileInConfig rcfiles
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='nano'
+  export EDITOR='vim'
 else
   export EDITOR='code'
 fi
@@ -108,33 +108,3 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Run pythod using the `py` alias
-function py() {
-  ( /usr/local/bin/python3 $* )
-}
-
-alias flushdns='dscacheutil -flushcache;sudo killall -HUP mDNSResponder'
-
-gpc () {
-  git push origin $(git name-rev --name-only HEAD)
-}
-
-gfc () {
-  git pull origin $(git name-rev --name-only HEAD)
-}
-
-alias yeet="gpc"
-alias yoink="gfc"
-
-# Docker commands
-drma () {
-  docker rm $(docker ps -aq)
-}
-alias dlsa="docker ps -a"
-alias dps="docker ps"
-alias dpsa="docker ps -a"
-function dc() {
-  docker-compose $*
-}
-alias dcps="docker-compose ps"
