@@ -1,4 +1,5 @@
 tap "homebrew/bundle"
+
 brew "git"
 brew "neovim"
 brew "node"
@@ -8,6 +9,7 @@ brew "spaceship"
 brew "tmux"
 brew "zsh"
 brew "zsh-autosuggestions"
+
 cask "1password"
 cask "chatgpt"
 cask "docker"
@@ -21,6 +23,7 @@ cask "visual-studio-code"
 cask "warp"
 cask "wezterm"
 cask "zoom"
+
 vscode "asvetliakov.vscode-neovim"
 vscode "enkia.tokyo-night"
 vscode "extr0py.vscode-relative-line-numbers"
