@@ -85,6 +85,10 @@ sourceFileInConfig () {
 
 sourceFileInConfig rcfiles
 
+init () {
+  git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+}
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -96,6 +100,8 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export EDITOR='code'
 fi
+
+export DISABLE_AUTO_TITLE='true'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"

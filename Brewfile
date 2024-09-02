@@ -9,6 +9,7 @@ brew "rcm"
 brew "ripgrep"
 brew "spaceship"
 brew "tmux"
+brew "tmuxp"
 brew "zsh"
 brew "zsh-autosuggestions"
 

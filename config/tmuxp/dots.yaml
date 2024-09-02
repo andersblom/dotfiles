@@ -1,0 +1,8 @@
+session_name: Dotfiles
+start_directory: ~/.dotfiles
+windows:
+  - window_name: .dotfiles
+    panes:
+      - shell_command:
+        - cmd: 'clear'
+        - cmd: 'nvim'
