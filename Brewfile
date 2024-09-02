@@ -1,6 +1,8 @@
 tap "homebrew/bundle"
 
 brew "git"
+brew "htop"
+brew "lazygit"
 brew "neovim"
 brew "node"
 brew "rcm"
@@ -9,7 +11,6 @@ brew "spaceship"
 brew "tmux"
 brew "zsh"
 brew "zsh-autosuggestions"
-brew "lazygit"
 
 cask "1password"
 cask "chatgpt"
