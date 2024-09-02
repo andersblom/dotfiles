@@ -1,3 +1,5 @@
+alias lg='lazygit'
+
 alias gcpx='git cherry-pick -x'
 alias gcpa='git cherry-pick --abort'
 alias gcob='git checkout -b'
