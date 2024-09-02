@@ -11,4 +11,8 @@ config.font = wezterm.font("Hack Nerd Font Mono", {
 config.font_size = 16.0
 config.line_height = 1.1
 
+-- Functionality specification
+config.enable_tab_bar = false
+config.window_decorations = "RESIZE"
+
 return config
