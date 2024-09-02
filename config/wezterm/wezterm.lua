@@ -15,4 +15,12 @@ config.line_height = 1.1
 config.enable_tab_bar = false
 config.window_decorations = "RESIZE"
 
+-- Window specification
+config.window_padding = {
+	left = 8,
+	right = 8,
+	top = 8,
+	bottom = 8,
+}
+
 return config
