@@ -1,18 +1,11 @@
-local wezterm = require("wezterm")
-local config = wezterm.config_builder()
+local ui = require("ui")
+local hooks = require("hooks")
+local config = {}
 
--- Theme specification
-config.color_scheme = "tokyonight_night"
+for _, value in pairs({ ui, hooks }) do
+	value.setup(config)
+end
 
--- Font specification
-config.font = wezterm.font("Hack Nerd Font Mono", {
-	weight = "Regular",
-})
-config.font_size = 16.0
-config.line_height = 1.1
-
--- Functionality specification
-config.enable_tab_bar = false
-config.window_decorations = "RESIZE"
+config.term = "wezterm"
 
 return config
