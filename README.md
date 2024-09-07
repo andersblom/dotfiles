@@ -12,6 +12,8 @@
 
 ## Neovim
 - [ ] Explore docker-integrations
+- [ ] docker-compose LSP doesn't seem to work
+- [ ] Debugging with DAP 
 
 ## Tmux 
 - [ ] Hotkeys for swapping panes like in Warp - `Cmd+[` & `Cmd+]`
