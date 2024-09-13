@@ -9,6 +9,8 @@ export ZSH="/$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 
 export TERM="xterm-256color"
 [[ -n $Tmux ]] && export Term="screen=256color"
