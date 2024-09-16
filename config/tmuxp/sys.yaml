@@ -1,0 +1,13 @@
+session_name: System 
+start_directory: ~/
+windows:
+  - window_name: system
+    layout: tiled
+    panes:
+      - shell_command:
+        - cmd: 'clear'
+        - cmd: 'htop'
+      - shell_command:
+        - cmd: 'neofetch'
+      - shell_command:
+        - cmd: 'clear'
