@@ -1,0 +1,5 @@
+[user]
+	name = Anders Blom
+	email = anders@andersblom.dk
+[core]
+	excludesFile = ~/.gitignore
